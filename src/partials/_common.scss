@@ -71,11 +71,37 @@ $royal-blue:#4257ef;
     font-weight: normal;
 }
 @mixin padding-bottom {
-    padding: 10%;
+    padding-bottom: 10%;
 }
 @mixin img-up {
     position: relative;
     top:-50px;    
+}
+@mixin cardSetOfthree {
+    @include display-flex-column-evenly;
+    margin-right:11%;
+    flex-basis: 26%;
+}
+@mixin img-in-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 50px 0px;
+    box-shadow: black 0px 5px 30px;
+    
+}
+@mixin display-flex-separed-two-items {
+    @include display-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@mixin h3 {
+    font-size: 25;
+    font-weight: normal ;
+}
+@mixin h4 {
+    font-size: 18;
+    color: $royal-blue;
 }
 
 

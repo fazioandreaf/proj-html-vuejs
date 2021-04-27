@@ -58,10 +58,8 @@
                 @include padding-left-right;
                 background-color:$cold-gray;
                 nav{
-                    @include display-flex;
+                    @include display-flex-separed-two-items;
                     height: 100%;
-                    align-items: center;
-                    justify-content: space-between;
                     color:$silver;
                     .nav-right ul{
                         @include display-flex;
@@ -124,16 +122,11 @@
                         @include img-up;
                         @include display-flex;
                         .cardSet_single{
-                            margin-right:11%;
-                            @include display-flex-column-evenly;
-                            flex-basis: 26%;
+                            @include cardSetOfthree;
+                            @include img-in-card;
                             justify-content: flex-end;
                             @include padding-tot;
                             height: 400px;
-                            background-size: cover;
-                            background-position: center;
-                            border-radius: 0px 0px 50px 0px;
-                            box-shadow: black 0px 5px 30px;
                             .placeholder-img{
                                 width: 50px;
                             }
@@ -232,7 +225,63 @@
                         }
                     }
                 }
+                .videoCard{
+                    @include padding-left-right;
+                    .videoCard-title{
+                        @include display-flex-separed-two-items;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                        a:hover{
+                            text-decoration: underline;
+                        }
+                        span:nth-child(2){
+                            a{
+                                transition: all 0.4s linear 0s;
+                                &:hover{
+                                color: $royal-blue;
+                            }
+                            }
+                        }
+                    }
+                    .videoShow{
+                        @include display-flex;
+                        @include padding-bottom;
+                        .videoShow-single{
+                            @include cardSetOfthree;
+                            align-items: center;
+                            >div{
+                                position: relative;
+                                img{
+                                    @include img-in-card;
+                                    position: relative;
+                                    box-shadow: none;
+                                    width: 100%;
+                                    @include margin-top-bottom;
+                                }
+                                .play{
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                    height: 40px;
+                                    width: 40px;
+                                }
+                            }
+                            h3{
+                                @include h3;
+                                
+                            }
+                            h4{
+                                @include h4;
+                            }
+                        }
+                        div:nth-child(3){
+                            margin-right: 0px;
 
+                        }
+
+                    }
+
+                }
 
 
 
