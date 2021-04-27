@@ -29,6 +29,13 @@ $royal-blue:#4257ef;
     display: -webkit-flex;
     display: flex;
 };
+@mixin display-flex-column-evenly{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+};
 @mixin margin-top-bottom {
     margin:10px 0;
 };
@@ -54,13 +61,23 @@ $royal-blue:#4257ef;
 @mixin btn{
     padding: 1rem 2rem;
     border-radius: 2rem;
-    
 }
-@mixin bluee{
-    background-color: $dodger-blue;
-    color: white;
+@mixin h1{
+    font-size:75px;
+    font-weight: normal;
+}
+@mixin h2 {
+    font-size: 62px;
+    font-weight: normal;
+}
+@mixin padding-bottom {
+    padding: 10%;
+}
+@mixin img-up {
+    position: relative;
+    top:-50px;    
+}
 
-}
 
 
 
