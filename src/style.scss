@@ -330,6 +330,7 @@
                 .features{
                     @include display-flex;
                     @include padding-left-right;
+                    @include padding-bottom;
                     padding-top:50px ;
                     padding-bottom:50px ;
                     background-color:black ;
@@ -338,7 +339,6 @@
                         @include cardSetOfthree;
                         @include display-flex-column-evenly;
                         @include padding-tot;
-                        @include padding-bottom;
                         border-radius: 5px;
                         border:2px $royal-blue solid ;
                         >div{
