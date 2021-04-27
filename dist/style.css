@@ -84,3 +84,70 @@
 * body .container main .jumbo .jumboDescription > div .btn {
   margin-left: 0;
 }
+* body .container main .card {
+  padding: 0 10%;
+  background-image: linear-gradient(150deg, #4154fe, #a00644);
+  position: relative;
+}
+* body .container main .card .cardSet {
+  position: relative;
+  top: -30px;
+  display: flex;
+}
+* body .container main .card .cardSet .cardSet_single {
+  margin-right: 5%;
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 0px 50px 0px;
+  box-shadow: black 0px 5px 30px;
+}
+* body .container main .card .cardSet .cardSet_single h2 {
+  color: #ffff;
+  font-size: 1.4rem;
+}
+* body .container main .card .cardSet .cardSet_single h4 {
+  color: #fff941;
+}
+* body .container main .card .cardSet .first {
+  background-image: url(img/box3-2x.jpg);
+}
+* body .container main .card .cardSet .second {
+  background-image: url(img/box3-2x.jpg);
+}
+* body .container main .card .cardSet .third {
+  background-image: url(img/box3-2x.jpg);
+}
+* body .container main .card .cardPhrase {
+  display: flex;
+  color: #ffff;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 3rem;
+}
+* body .container main .card .cardPhrase .author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bcbcbc;
+}
+* body .container main .card .cardPhrase .author img {
+  border-radius: 50%;
+  height: 70px;
+  margin-right: 10px;
+}
+* body .container main .card .cardPhrase .author span:nth-child(3) {
+  font-size: 0.8rem;
+  color: #bcbcbc;
+}
+* body .container main .card .cardPhrase .author span:nth-child(2) {
+  color: #ffff;
+  font-size: 1rem;
+  margin-right: 10px;
+}
