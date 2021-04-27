@@ -292,3 +292,52 @@
 * body .container main .videoCard .videoShow div:nth-child(3) {
   margin-right: 0px;
 }
+* body .container main .newsletter {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  height: 100%;
+  background-image: linear-gradient(90deg, black 35%, rgba(6, 6, 7, 0) 75%), url(img/newsletter.jpg);
+  background-size: cover;
+}
+* body .container main .newsletter .newsletterDescription {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-content: center;
+  width: 60%;
+  color: white;
+}
+* body .container main .newsletter .newsletterDescription > * {
+  margin: 10px 0;
+}
+* body .container main .newsletter .newsletterDescription h4 {
+  font-size: 28px;
+}
+* body .container main .newsletter .newsletterDescription h4 a {
+  color: #ec5a57;
+}
+* body .container main .newsletter .newsletterDescription h4 a :hover {
+  text-decoration: underline;
+}
+* body .container main .newsletter .newsletterDescription .newsTitle {
+  font-size: 60px;
+}
+* body .container main .newsletter .newsletterDescription > div {
+  display: flex;
+}
+* body .container main .newsletter .newsletterDescription > div input {
+  flex: 1;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.6rem;
+}
+* body .container main .newsletter .newsletterDescription span:nth-child(5) {
+  color: #bcbcbc;
+}
+* body .container main .features {
+  background-color: black;
+}
