@@ -339,5 +339,46 @@
   color: #bcbcbc;
 }
 * body .container main .features {
+  display: flex;
+  padding: 0 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: black;
+}
+* body .container main .features .featuresCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 11%;
+  flex-basis: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  padding-bottom: 10%;
+  border-radius: 5px;
+  border: 2px #4257ef solid;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+* body .container main .features .featuresCard > div {
+  padding: 1rem;
+}
+* body .container main .features .featuresCard > div img {
+  width: 30%;
+}
+* body .container main .features .featuresCard:nth-child(3) {
+  margin-right: 0;
+}
+* body .container main .features .featuresCard span:nth-child(2) {
+  font-size: 28px;
+}
+* body .container main .features .featuresCard span:nth-child(3) {
+  font-size: 24px;
+  color: #fff941;
+}
+* body .container main .features .featuresCard span:nth-child(4) {
+  padding: 1rem;
+  color: #bcbcbc;
 }
