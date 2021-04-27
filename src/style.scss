@@ -1,14 +1,109 @@
+@import "partials/_common";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
     body{
-        header{
-            background-color:lightblue
+        font-family: Barlow,'sans-serif';
+        .container{
+            .btn{
+                @include btn;
+                margin: 0 1rem;
+                transition: all 0.4s linear 0s;
+            }
+            .bluee{
+                @include bluee;
+                &:hover{
+                    background-color: $monza;
+                }
+            }
+            .transp{
+                border: 1px solid $white;
+                &:hover{
+                    background-color: $white;
+                    color: $cold-gray;
+                }
+            }
+            a{
+                @include a-simple;
+            }
+            header{
+                height: 100px;
+                @include padding-left-right;
+                background-color:$cold-gray;
+                nav{
+                    @include display-flex;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+                    color:$silver;
+                    .nav-right ul{
+                        @include display-flex;
+                        list-style-type: none;
+                        li{
+                            @include capitalize;
+                            @include margin-tot;
+                            a{
+                                &:hover{
+                                    color: white;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            main{
+                .jumbo{
+                    @include padding-left-right;
+                    background-image: linear-gradient(90deg, black 35%, rgba(6, 6, 7, 0) 75%), url(img/jumbo.jpg);
+                    background-size: cover;
+                    .jumboDescription{
+                        color: $white;
+                        @include display-flex;
+                        flex-direction: column;
+                        height: calc(80vh - 100px);
+                        justify-content: center;
+                        >*{
+                            @include margin-top-bottom
+                        }
+                        h4{
+                            color: $red-strong;
+                        }
+                        span{
+                            color: $yellow ;
+                        }
+                        h5{
+                            color: $silver;
+                        }
+                        >div{
+                            margin: 2rem 2rem 2rem 0rem ;
+                            .btn{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
         }
-
-
-
+            
+            
 
     }
 }

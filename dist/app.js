@@ -8,10 +8,20 @@
 /***/ (() => {
 
 function init() {
-  console.log('ciao');
+  new Vue({
+    el: '#app',
+    data: {
+      headerItem: ['home', 'services', 'about', 'video', 'blog', 'store']
+    },
+    'methods': {
+      log: function log() {
+        console.log('ciao');
+      }
+    }
+  });
 }
 
-init();
+document.addEventListener('DOMContentLoaded', init);
 
 /***/ }),
 

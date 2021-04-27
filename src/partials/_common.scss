@@ -1,0 +1,78 @@
+// color
+$white:#ffff;
+$cold-gray:#060606;
+$windsor:#6b0c7a;
+$monza:#bc0428;
+$silver:#bcbcbc;
+$dodger-blue:#4154fe;
+$jumbo:#78787a;
+$astronaut-blue:#014461;
+$burnt-sienna:#ec5a57;
+$verdun-green:#504e00;
+$red-strong:#ff414b;
+$yellow:#fff941;
+// median cut
+$oriental-ping:#bc8b96;
+$cinder:#0d0b12;
+$cosmic:#683551;
+$daisy-bush:#4321aa;
+$sea-nymph:#709e9c;
+//material design
+$shiraz:#a00644;
+$mongoose:#b6967e;
+$blue-gem:#4613a0;
+$cocoa-brown:#362428;
+$royal-blue:#4257ef;
+
+@mixin display-flex{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+};
+@mixin margin-top-bottom {
+    margin:10px 0;
+};
+@mixin margin-tot{
+    margin: 1rem;
+};
+@mixin padding-left-right{
+        padding: 0 10%;
+};
+@mixin padding-tot {
+    padding: 1rem;
+};
+@mixin capitalize {
+    text-transform:capitalize;
+};
+@mixin uppercase {
+    text-transform:uppercase;
+};
+@mixin a-simple{
+    color: inherit;
+    text-decoration: none;
+}
+@mixin btn{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    
+}
+@mixin bluee{
+    background-color: $dodger-blue;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

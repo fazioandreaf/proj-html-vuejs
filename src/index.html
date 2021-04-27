@@ -10,22 +10,78 @@
     <!-- js -->
     <script src="app.js"></script>
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- cdn font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
-    <div class="container">
+    <div id="app" class="container">
         <header>
-            avatafitness
+            <nav>
+                <div class="nav-left">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li v-for="elem in headerItem"><a href="">{{elem}}</a></li>
+                        <a class="btn bluee"   href="">Schedule a workout</a>
+                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                    </ul>
+
+                </div>
+            </nav>
         </header>
         <main>
+            <div class="jumbo">
+               <div class="jumboDescription">
+                   <h4>Certifield Fitnes professional</h4>
+                   <h1>Take control of your health</h1>
+                   <span>placeholder of wave</span>
+                   <h5>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</h5>
+                   <div>
+                       <a class="btn bluee" href=""><i class="fab fa-youtube"></i> Visit my YouTube channel</a>
+                       <a class="btn transp" href=""> Buy Avada today <i class="fas fa-arrow-right"></i></a>
+                    </div>
+               </div> 
+            </div>
+            <div class="card">
 
+            </div>
+            <div class="slogan">
+
+            </div>
+            <div class="videoCard">
+
+            </div>
+            <div class="newsletter">
+
+            </div>
+            <div class="features">
+
+            </div>
+            <div class="last-articles">
+
+            </div>
+            <div class="callToAction">
+
+            </div>
+            <div class="benefit">
+
+            </div>
+            <div class="previewEvent">
+
+            </div>
         </main>
         <footer>
+            <div>
 
+            </div>
+            <div class="copyright">
+
+            </div>
         </footer>
 
     </div>
