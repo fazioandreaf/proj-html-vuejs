@@ -513,6 +513,82 @@
                 }
 
             }
+            footer{
+                @include padding-left-right;
+                background-color:$cold-gray;
+                .footer-list{
+                    @include display-flex;
+                    @include padding-bottom;
+                    text-align: center;
+                    padding-top: 50px;
+                    .description{
+                        @include cardSetOfthree;
+                        @include display-flex-column-center-center;
+                        color: $silver;
+                        img{
+                            width: 80%;
+                        }
+                        >*{
+                            @include padding-tot;
+                        }
+                        .social{
+                            color: $burnt-sienna;
+                            width: 70%;
+                            ul{
+                                @include display-flex;
+                                list-style-type: none;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                    .recent-post{
+                        @include display-flex-column-center-center;
+                        @include cardSetOfthree;
+                        color: $white;
+                        span{
+                            font-size: 20px;
+                        }
+                        >*{
+                            @include padding-tot;
+                        }
+                        ul{
+                            list-style-type:  none;
+                            li{
+                                padding: 0.5rem 0
+                            }
+                        }
+                    }
+                    .contacts{
+                        @include cardSetOfthree;
+                        @include display-flex-column-center-center;
+                        color: $white;
+                        span:nth-child(1){
+                            @include uppercase;
+                        }
+                        span:nth-child(2){
+                            color:$silver;
+                        }
+                        >*{
+                            @include padding-tot;
+                        }
+
+                    }
+
+                }
+                .copyright{
+                    @include padding-tot;
+                    text-align: center;
+                    color: $silver;
+                    border-top: 1px solid $silver;
+                    a{
+                        color: $white;
+                    }
+                }
+
+
+
+
+            }
 
 
 
