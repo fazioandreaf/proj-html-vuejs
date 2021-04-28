@@ -467,7 +467,28 @@
                     }
 
                 }
-
+                .benefit{
+                    @include padding-left-right;
+                    @include display-flex;
+                    @include margin-top-bottom;
+                    @include padding-bottom;
+                    align-items: center;
+                    .benefit-card{
+                        @include display-flex-column-evenly;
+                        text-align: center;
+                        align-items: center;
+                        font-size: 19px;
+                        >*{
+                            @include padding-tot;
+                        }
+                        span img{
+                            width: 65px;
+                        }
+                        >img{
+                            width: 80%;
+                        }
+                    }
+                }
 
 
             }
