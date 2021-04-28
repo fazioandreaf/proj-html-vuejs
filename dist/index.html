@@ -253,11 +253,7 @@
                 <div class="recent-post">
                     <span>Recent post</span>
                     <ul>
-                        <li><i class="fas fa-chevron-right"> The best protein shake</i></li>
-                        <li><i class="fas fa-chevron-right"> Ultimate cardio workout</i></li>
-                        <li><i class="fas fa-chevron-right"> New juices available</i></li>
-                        <li><i class="fas fa-chevron-right"> 20 best health yrecipes</i></li>
-                        <li><i class="fas fa-chevron-right"> Tips to find training partners</i></li>
+                        <li v-for="elem in footer-list"><i class="fas fa-chevron-right"> {{elem}}</i></li>
                     </ul>
                 </div>
                 <div class="contacts">
