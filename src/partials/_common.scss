@@ -36,6 +36,21 @@ $royal-blue:#4257ef;
     flex-direction: column;
     justify-content: space-evenly
 };
+@mixin display-flex-column-center-center{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+};
+@mixin display-flex-column-center{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+};
 @mixin margin-top-bottom {
     margin:10px 0;
 };
@@ -96,11 +111,11 @@ $royal-blue:#4257ef;
     
 }
 @mixin h3 {
-    font-size: 25;
+    font-size: 25px;
     font-weight: normal ;
 }
 @mixin h4 {
-    font-size: 18;
+    font-size: 18px;
     color: $royal-blue;
 }
 

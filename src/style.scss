@@ -38,9 +38,7 @@
             }
             .play{
                 position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center ;
+                @include display-flex-column-center-center;
                 height: 70px;
                 width: 70px;
                 background-color: $white;
@@ -89,10 +87,9 @@
                         left: 75%;
                     }
                     .jumboDescription{
-                        @include display-flex-column-evenly;
+                        @include display-flex-column-center;
                         color: $white;
                         height: calc(80vh - 100px);
-                        justify-content: center;
                         h1{
                             @include h1;
                         }
@@ -205,8 +202,7 @@
                     }
                     .sloganDescription{
                         @include padding-left-right;
-                        @include display-flex-column-evenly;
-                        justify-content: center;
+                        @include display-flex-column-center;
                         >*{
                             @include margin-top-bottom;
                         }
@@ -291,8 +287,7 @@
                     background-size:cover ;
                     .newsletterDescription{
                         @include padding-left-right;
-                        @include display-flex-column-evenly;
-                        justify-content: center;
+                        @include display-flex-column-center;
                         width: 60%;
                         color: white;
                         >*{
@@ -341,6 +336,9 @@
                         @include padding-tot;
                         border-radius: 5px;
                         border:2px $royal-blue solid ;
+                        font-size: 18px;
+                        color: white;
+                        text-align: center;
                         >div{
                             @include padding-tot;
                             img{
@@ -350,9 +348,6 @@
                         &:nth-child(3){
                             margin-right: 0;
                         }
-                        font-size: 18px;
-                        color: white;
-                        text-align: center;
                         span:nth-child(2){
                             font-size: 28px;
                         }
@@ -450,7 +445,6 @@
                         align-items: center;
                         font-size: 39px;
                         color: $white;
-                        flex-direction: column;
                         text-align: center;
                         flex-wrap: wrap;
                         font-size: 3rem;
@@ -489,7 +483,34 @@
                         }
                     }
                 }
-
+                .previewEvent{
+                    height: 500px;
+                    background-image: linear-gradient(151deg, rgba(6, 25, 231, 0.5) 35%, rgba(206, 1, 18, 0.5) 100%), url(img/previewEventImg.jpg);
+                    background-size: cover;
+                    text-align: center;
+                    color: $white;
+                    >div{
+                        @include display-flex-column-center-center;
+                        height: 100%;
+                        .play{
+                            position: relative;
+                            color: $royal-blue;
+                                &:hover{
+                                    color: red
+                                }
+                        }
+                        >*{
+                            @include padding-tot;
+                        }
+                        h2{
+                            @include h2;
+                        }
+                        h3{
+                            @include h3;
+                            color:  $yellow;
+                        }
+                    }
+                }
 
             }
 
