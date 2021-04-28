@@ -436,7 +436,37 @@
                     }
 
                 }
+                .callToAction{
+                    @include padding-left-right;
+                    @include padding-bottom;
+                    padding-top: 50px;
+                    background-image: linear-gradient(rgba(0, 2, 17, 0.16) 0%, rgb(0, 2, 17) 100%), url(img/callToActionImg.jpg);
+                    background-size: cover;
+                    position: relative;
+                    .callToActionPhrase{
+                        @include display-flex-column-evenly;
+                        @include padding-bottom;
+                        @include padding-left-right;
+                        align-items: center;
+                        font-size: 39px;
+                        color: $white;
+                        flex-direction: column;
+                        text-align: center;
+                        flex-wrap: wrap;
+                        font-size: 3rem;
+                        >*{
+                            @include padding-tot;
+                        }
+                        .placeholder-img{
+                            width: 100px;
+                        }
+                        span:nth-child(2){
+                            font-size: 23px;
+                        }
 
+                    }
+
+                }
 
 
 
