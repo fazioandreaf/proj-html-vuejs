@@ -82,9 +82,9 @@
 * body .container header nav .nav-right ul li a:hover {
   color: white;
 }
-@-webkit-keyframes upToDown {
+@-webkit-keyframes downToUp {
   0% {
-    top: -25%;
+    top: 15%;
     opacity: 0;
   }
   100% {
@@ -92,9 +92,9 @@
     opacity: 1;
   }
 }
-@keyframes upToDown {
+@keyframes downToUp {
   0% {
-    top: -25%;
+    top: 15%;
     opacity: 0;
   }
   100% {
@@ -118,6 +118,26 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes upToDown {
+  0% {
+    top: -15%;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
+@keyframes upToDown {
+  0% {
+    top: -15%;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
 * body .container main .jumbo {
   padding: 0 10%;
   height: 700px;
@@ -138,8 +158,8 @@
   height: 100%;
   -webkit-animation: upToDown 1s 1;
           animation: upToDown 1s 1;
-  -webkit-animation: fade in 1s 1;
-          animation: fade in 1s 1;
+  -webkit-animation: fadein 1s 1;
+          animation: fadein 1s 1;
   transition: all 1s linear;
 }
 * body .container main .jumbo .jumboDescription h1 {

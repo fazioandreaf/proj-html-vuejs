@@ -1,0 +1,7 @@
+
+@mixin upToDown{
+    @keyframes upToDown {
+    0%   { top:-15%;opacity: 0;} 
+    100% { top:0%; opacity: 1;}
+    }
+}
