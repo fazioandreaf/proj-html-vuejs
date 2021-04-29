@@ -118,7 +118,10 @@ $royal-blue:#4257ef;
     font-size: 18px;
     color: $royal-blue;
 }
-
+@mixin bg-cover-center {
+    background-size: cover;
+    background-position: center;
+}
 
 
 

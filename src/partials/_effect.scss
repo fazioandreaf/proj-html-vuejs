@@ -5,3 +5,22 @@
     100% { top:0%; opacity: 1;}
     }
 }
+@mixin an-toDownFade {
+    position: relative;
+    animation: upToDown 1s 1 ;
+    animation: fade in 1.2s 1 ;
+}@mixin an-toUpFade {
+    position: relative;
+    animation: downToUp 1s 1 ;
+    animation: fade in 1.2s 1 ;
+}
+@mixin an-toRightFade {
+    position: relative;
+    animation: leftToRight 1s 1 ;
+    animation: fade in 1.2s 1 ;
+}
+@mixin an-toLeftFade {
+    position: relative;
+    animation: rightToLeft 1s 1 ;
+    animation: fade in 1.2s 1 ;
+}

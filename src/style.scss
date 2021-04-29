@@ -81,20 +81,39 @@
             }
             main{
                 //  animation
-                // @keyframes upToDown {
-                //      0%   { top:-15%;opacity: 0;} 
-                //     100% { top:0%; opacity: 1;}
-                // }
+                @keyframes upToDown {
+                     0%   { top:-15%;opacity: 0;} 
+                    100% { top:0%; opacity: 1;}
+                }
                 @keyframes downToUp {
                      0%   { top:15%;opacity: 0;} 
                     100% { top:0%; opacity: 1;}
+                }
+                @keyframes downToUpP {
+                     0%   { top:15%;opacity: 0;} 
+                    100% { top:-50px; opacity: 1;}
+                }
+                @keyframes downToUpPlay {
+                     0%   { top:0%;opacity: 0;} 
+                    100% { top:50%; opacity: 1;}
+                }
+                @keyframes leftToRight {
+                     0%   { left:-15%;opacity: 0;} 
+                    100% { left:0%; opacity: 1;}
+                }
+                @keyframes rightToLeft {
+                     0%   { right:-15%;opacity: 0;} 
+                    100% { right:0%; opacity: 1;}
                 }
                 @keyframes fadein {
                      0%   { opacity: 0;} 
                     100% {  opacity: 1;}
                 }
+                @keyframes thich {
+                     0%   { padding: 1rem} 
+                    100% {  padding: 2rem}
+                }
 
-                @include  upToDown;
 
 
 
@@ -118,8 +137,9 @@
                         position: relative;
                         color: $white;
                         height:  100%;
-                        animation: upToDown 1s 1 ;
-                        animation: fadein 1s 1 ;
+                        // animation: upToDown 1s 1 ;
+                        // animation: fade in 1s 1 ;
+                        @include an-toDownFade;
                         transition: all 1s linear;
                         h1{
                             @include h1;
@@ -149,6 +169,8 @@
                     .cardSet{
                         @include img-up;
                         @include display-flex;
+                        @include an-toUpFade;
+                        animation: downToUpP 1s 1 ;
                         .cardSet_single{
                             @include cardSetOfthree;
                             @include img-in-card;
@@ -184,6 +206,7 @@
                         @include display-flex;
                         @include margin-top-bottom;
                         @include padding-bottom;
+                        @include an-toDownFade;
                         color: $white;
                         flex-direction: column;
                         text-align: center;
@@ -229,9 +252,14 @@
                         }
                     }
                     .sloganVideo{
-                        @include img-up;
+                        @include an-toRightFade;
+                        img{
+                            @include img-in-card;
+                            @include img-up;
+                        }
                     }
                     .sloganDescription{
+                        @include an-toLeftFade;
                         @include padding-left-right;
                         @include display-flex-column-center;
                         >*{
@@ -277,6 +305,7 @@
                             @include cardSetOfthree;
                             align-items: center;
                             >div{
+                                animation: upToDown 5s 1;
                                 position: relative;
                                 img{
                                     @include img-in-card;
@@ -286,6 +315,7 @@
                                     @include margin-top-bottom;
                                 }
                                 .play{
+                                    animation: downToUpPlay 1s 1;
                                     top: 50%;
                                     left: 50%;
                                     transform: translate(-50%,-50%);
@@ -301,9 +331,16 @@
                                 @include h4;
                             }
                         }
+                        div:nth-child(1){
+                            animation: upToDown 1s 1;
+                        }
+                        div:nth-child(2){
+                            animation: upToDown 2s 1;
+                        }
+
                         div:nth-child(3){
                             margin-right: 0px;
-
+                            animation: upToDown 3s 1;
                         }
 
                     }
@@ -319,6 +356,7 @@
                     .newsletterDescription{
                         @include padding-left-right;
                         @include display-flex-column-center;
+                        @include an-toRightFade;
                         width: 60%;
                         color: white;
                         >*{
@@ -365,11 +403,20 @@
                         @include cardSetOfthree;
                         @include display-flex-column-evenly;
                         @include padding-tot;
+                        position: relative;
                         border-radius: 5px;
                         border:2px $royal-blue solid ;
                         font-size: 18px;
                         color: white;
                         text-align: center;
+                        transition: all 0.4s ease-in-out;
+                        box-sizing: inherit;
+                        &:hover{
+                            transform: scale(1.2);
+                            padding-top: 2.6rem;
+                            padding-bottom: 2.2rem;
+                            font-size: 1rem;
+                        }
                         >div{
                             @include padding-tot;
                             img{
@@ -415,6 +462,7 @@
                         @include display-flex;
                         @include margin-top-bottom;
                         @include padding-bottom;
+                        @include an-toRightFade;
                         .article-single{
                             @include cardSetOfthree;
                             align-items: flex-start;
@@ -465,14 +513,15 @@
                 .callToAction{
                     @include padding-left-right;
                     @include padding-bottom;
+                    @include bg-cover-center;
                     padding-top: 50px;
                     background-image: linear-gradient(rgba(0, 2, 17, 0.16) 0%, rgb(0, 2, 17) 100%), url(img/callToActionImg.jpg);
-                    background-size: cover;
                     position: relative;
                     .callToActionPhrase{
                         @include display-flex-column-evenly;
                         @include padding-bottom;
                         @include padding-left-right;
+                        @include an-toUpFade;
                         align-items: center;
                         font-size: 39px;
                         color: $white;
@@ -512,16 +561,37 @@
                         >img{
                             width: 80%;
                         }
+                        &:nth-child(1){
+                            position: relative;
+                            animation: downToUp 1s 1 ;
+                            animation: fade in 1.2s 1 ;
+                        }
+                        &:nth-child(2){
+                            position: relative;
+                            animation: downToUp 1.5s 1 ;
+                            animation: fade in 1.7s 1 ;
+                        }
+                        &:nth-child(3){
+                            position: relative;
+                            animation: downToUp 2s 1 ;
+                            animation: fade in 2.2s 1 ;
+                        }
+                        &:nth-child(4){
+                            position: relative;
+                            animation: downToUp 2.5s 1 ;
+                            animation: fade in 1.7s 1 ;
+                        }
                     }
                 }
                 .previewEvent{
+                    @include bg-cover-center;    
                     height: 500px;
                     background-image: linear-gradient(151deg, rgba(6, 25, 231, 0.5) 35%, rgba(206, 1, 18, 0.5) 100%), url(img/previewEventImg.jpg);
-                    background-size: cover;
                     text-align: center;
                     color: $white;
                     >div{
                         @include display-flex-column-center-center;
+                        @include an-toUpFade;
                         height: 100%;
                         .play{
                             position: relative;
