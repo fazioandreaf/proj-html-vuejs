@@ -3,6 +3,9 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    #app{
+        font-family: 'Barlow condensed','sans-serif';
+    }
     body{
         font-family: 'Barlow condensed','sans-serif';
         .container{
@@ -76,11 +79,33 @@
                 }
             }
             main{
+                //  animation
+                @keyframes upToDown {
+                     0%   { top:-15%;opacity: 0;} 
+                    100% { top:0%; opacity: 1;}
+                }
+                @keyframes downToUp {
+                     0%   { top:15%;opacity: 0;} 
+                    100% { top:0%; opacity: 1;}
+                }
+                @keyframes fadein {
+                     0%   { opacity: 0;} 
+                    100% {  opacity: 1;}
+                }
+
+
+
+
+
+
+
+
                 // jumbo
                 .jumbo{
                     @include padding-left-right;
+                    height: 700px;
                     position: relative;
-                    background-image: linear-gradient(90deg, black 35%, rgba(6, 6, 7, 0) 75%), url(img/jumbo.jpg);
+                    background-image: linear-gradient(90deg, black 55%, rgba(6, 6, 7, 0) 75%), url(img/jumbo.jpg);
                     background-size: cover;
                     .play{
                         top: 50%;
@@ -88,8 +113,12 @@
                     }
                     .jumboDescription{
                         @include display-flex-column-center;
+                        position: relative;
                         color: $white;
-                        height: calc(80vh - 100px);
+                        height:  100%;
+                        animation: upToDown 1s 1 ;
+                        animation: fade in 1s 1 ;
+                        transition: all 1s linear;
                         h1{
                             @include h1;
                         }
