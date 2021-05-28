@@ -80,6 +80,10 @@
                 }
             }
             main{
+                >*{
+                    min-height: 450px;
+                }
+
                 //  animation
                 @keyframes upToDown {
                      0%   { top:-15%;opacity: 0;} 
@@ -164,8 +168,10 @@
                 //sezione carte
                 .card{
                     @include padding-left-right;
+                    min-height: 800px;
                     background-image: linear-gradient(150deg, $dodger-blue , $shiraz );
                     position: relative;
+                    
                     .cardSet{
                         @include img-up;
                         @include display-flex;
@@ -353,6 +359,7 @@
                     background-image: linear-gradient(90deg, black 35%, rgba(6, 6, 7, 0) 75%),
                     url(img/newsletter.jpg);
                     background-size:cover ;
+                    min-height: 620px;
                     .newsletterDescription{
                         @include padding-left-right;
                         @include display-flex-column-center;
@@ -395,6 +402,7 @@
                     @include display-flex;
                     @include padding-left-right;
                     @include padding-bottom;
+                    min-height: 500px;
                     padding-top:50px ;
                     padding-bottom:50px ;
                     background-color:black ;
@@ -514,6 +522,7 @@
                     @include padding-left-right;
                     @include padding-bottom;
                     @include bg-cover-center;
+                    min-height: 525px;
                     padding-top: 50px;
                     background-image: linear-gradient(rgba(0, 2, 17, 0.16) 0%, rgb(0, 2, 17) 100%), url(img/callToActionImg.jpg);
                     position: relative;
@@ -546,6 +555,7 @@
                     @include display-flex;
                     @include margin-top-bottom;
                     @include padding-bottom;
+                    min-height: 470px;
                     align-items: center;
                     .benefit-card{
                         @include display-flex-column-evenly;

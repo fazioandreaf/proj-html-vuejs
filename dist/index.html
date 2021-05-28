@@ -49,7 +49,7 @@
                </div> 
             </div>
             <div class="card">
-                <div class="cardSet" v-if="scrollPercent >0">
+                <div class="cardSet" v-if="scrollPercent >5">
                     <div class="cardSet_single first">
                         <span><img class="placeholder-img" src="img/placeholder.png" alt=""></span>
                         <h2>Crossfit workout</h2>
@@ -66,7 +66,7 @@
                         <h4>Push your limits</h4>
                     </div>
                 </div>
-                <div class="cardPhrase" v-if="scrollPercent >7">
+                <div class="cardPhrase" v-if="scrollPercent >14">
                     “How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.”
                     <span><img class="placeholder-img" src="img/placeholder-yellow.png" alt=""></span>
                     <div class="author">
@@ -77,8 +77,8 @@
                 </div>
             </div>
             <div class="slogan">
-                <div class="sloganVideo" v-if="scrollPercent >12"><img src="img/service15-2x.jpg" alt="sloganVideo"></div>
-                <div class="sloganDescription" v-if="scrollPercent >16">
+                <div class="sloganVideo" v-if="scrollPercent >22"><img src="img/service15-2x.jpg" alt="sloganVideo"></div>
+                <div class="sloganDescription" v-if="scrollPercent >22">
                    <h4>Tune up your workout</h4>
                    <h2>The best health & fitness advice onlkine</h2>
                    <h5>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</h5>
@@ -86,11 +86,11 @@
                 </div>
             </div>
             <div class="videoCard">
-                <div class="videoCard-title">
+                <div class="videoCard-title" v-if="scrollPercent >32">
                     <span><a href="">Featured playlist</a></span>
                     <span><a href="">View all videos <i class="fas fa-chevron-right"></i></a></span>
                 </div>
-                <div class="videoShow" v-if="scrollPercent >27">
+                <div class="videoShow" v-if="scrollPercent >32">
                     <div class="videoShow-single">
                         <div>
                             <img src="img/video2-2x.jpg" alt="">
@@ -118,8 +118,8 @@
                     </div>
                 </div>
             </div>
-            <div class="newsletter">
-               <div class="newsletterDescription" v-if="scrollPercent >35">
+            <div class="newsletter" >
+               <div class="newsletterDescription" v-if="scrollPercent >38">
                    <h4><a href="">Join our mailing list today</a></h4>
                    <span class="newsTitle">Insider offers & flash sales in your inbox ever week</span>
                    <span><img class="placeholder-img" src="img/placeholder-yellow.png" alt=""></span>
@@ -158,7 +158,7 @@
                     <span>Latest articles</span>
                     <span><a href="">Read all articles <i class="fas fa-chevron-right"></i></a></span>
                 </div>
-                <div class="article" v-if="scrollPercent >51">
+                <div class="article" v-if="scrollPercent >55">
                     <div class="article-single">
                         <div class="article-single-img">
                             <a href="">
@@ -189,7 +189,7 @@
                 
             </div>
             <div class="callToAction">
-                <div class="callToActionPhrase" v-if="scrollPercent >60">
+                <div class="callToActionPhrase" v-if="scrollPercent >65">
                     “I’ve failed over and over again in my life. And that is why I succeed.”
                     <span><img class="placeholder-img" src="img/placeholder-yellow.png" alt=""></span>
                     <span>Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis</span>
@@ -197,26 +197,26 @@
                 </div>
 
             </div>
-            <div class="benefit" v-if="scrollPercent >66">
-                <div class="benefit-card">
+            <div class="benefit" >
+                <div class="benefit-card" v-if="scrollPercent >70">
                    <img src="img/sponsor-1-2x.png" alt="">
                    <span><img class="placeholder-img" src="img/placeholder-bluee.png" alt=""></span>
                     <span>Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.</span>
                     <a href="">Visit yoga studio <i class="fas fa-chevron-right"></i></a>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card" v-if="scrollPercent >70">
                    <img src="img/sponsor-2-2x.png" alt="">
                    <span><img class="placeholder-img" src="img/placeholder-bluee.png" alt=""></span>
                     <span>Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.</span>
                     <a href="">Visit yoga studio <i class="fas fa-chevron-right"></i></a>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card" v-if="scrollPercent >70">
                    <img src="img/sponsor-3-2x.png" alt="">
                    <span><img class="placeholder-img" src="img/placeholder-bluee.png" alt=""></span>
                     <span>Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.</span>
                     <a href="">Visit yoga studio <i class="fas fa-chevron-right"></i></a>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card" v-if="scrollPercent >70">
                    <img src="img/sponsor-4-2x.png" alt="">
                    <span><img class="placeholder-img" src="img/placeholder-bluee.png" alt=""></span>
                     <span>Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.</span>

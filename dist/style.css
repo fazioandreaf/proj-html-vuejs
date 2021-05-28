@@ -82,6 +82,9 @@
 * body .container header nav .nav-right ul li a:hover {
   color: white;
 }
+* body .container main > * {
+  min-height: 450px;
+}
 @-webkit-keyframes upToDown {
   0% {
     top: -15%;
@@ -280,6 +283,7 @@
 }
 * body .container main .card {
   padding: 0 10%;
+  min-height: 800px;
   background-image: linear-gradient(150deg, #4154fe, #a00644);
   position: relative;
 }
@@ -502,6 +506,7 @@
   height: 100%;
   background-image: linear-gradient(90deg, black 35%, rgba(6, 6, 7, 0) 75%), url(img/newsletter.jpg);
   background-size: cover;
+  min-height: 620px;
 }
 * body .container main .newsletter .newsletterDescription {
   padding: 0 10%;
@@ -550,6 +555,7 @@
   display: flex;
   padding: 0 10%;
   padding-bottom: 10%;
+  min-height: 500px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: black;
@@ -680,6 +686,7 @@
   padding-bottom: 10%;
   background-size: cover;
   background-position: center;
+  min-height: 525px;
   padding-top: 50px;
   background-image: linear-gradient(rgba(0, 2, 17, 0.16) 0%, #000211 100%), url(img/callToActionImg.jpg);
   position: relative;
@@ -716,6 +723,7 @@
   display: flex;
   margin: 10px 0;
   padding-bottom: 10%;
+  min-height: 470px;
   align-items: center;
 }
 * body .container main .benefit .benefit-card {
